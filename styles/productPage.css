@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bannerContent{		
+	
+	}
+	p, span{
+		font-family:Verdana, Geneva, sans-serif;
+	}
+	
+	.bannerContent img{
+		width:100%;		
+		display:block;	
+		margin:-2px 0 -5px 0;
+		display:inline-block;
+	}
+	
+	.bodyContent{
+		width:940px;
+		height:auto;
+		margin:0 auto;	
+	}
+		
+	.pageContent{		
+		clear:both;
+		text-align:center;
+		padding-top:30px;
+		margin:0;		
+		padding-bottom:65px;
+		border-bottom:1px solid #ed4122;
+	}	
+	.pageContent .pageTitle{		
+		float:left;
+	}
+	span{		
+		font-size:25px;
+		font-weight:bold;		
+	}
+	.pageContent .pageTitle p{
+		color:#ffffff;	
+		background-color:#015db4;
+		padding:10px 25px;
+		font-size:25px;
+		font-weight:bold;
+	}
+	
+	.pageContent .backButton{
+		float:right;		
+	}
+	.pageContent .backButton a{
+		text-decoration:none;	
+		color:#015db4;
+	}
+	.pageContent .backButton a img{
+		width:20px;
+		margin-top:21px;
+		border:none;		
+	}
+	
+	.imageView{
+		clear:both;	
+		margin:0 auto;		
+	}
+	
+	.imageView .standContent{
+		margin-top:20px;
+	}
+	.imageView .standContent .standContentLeft{
+		color:#30373d;
+		width:49.4%;	
+		display:inline-block;	
+	}
+	
+	.imageView .standContent .standTitleRight{
+		width:50%;
+		display:inline-block;
+		text-align:right;
+		
+	}
+	.imageView .standContent .standTitleRight p{
+		background-color:#015db4;
+		display:inline-block;
+		padding:10px 20px 10px 30px;
+		color:#ffffff;
+		font-size:18px;
+	}	
+		
+	.imageView .imageHolder .mainImage{		
+		display:block;
+		width:100%;
+		border:none;
+	}
+	
+	.imageView .imageHolder .redirect{
+		position:absolute;
+	}
+	
+	.imageView .imageHolder #information{		
+		top:37%;
+		left:39%;
+		width:16%;
+		cursor:pointer;
+		border:none;
+	}
+	.imageView .imageHolder #vacancies{
+		left: 81%;
+    	top: 69.5%;
+		width:12%;
+		cursor:pointer;
+		border:none;
+	}
+	.imageView .imageHolder #contact{
+		left: 32%;
+   		top: 79%;
+		width:8%;
+		cursor:pointer;
+		border:none;
+	}
+	
+	.imageView .imageHolder #information_silver{		
+		height: 7.8%;
+		left: 35%;
+		top: 14%;
+		width: 30%;
+		background:rgba(0,0,0,0);
+		cursor:pointer;
+		border:none;
+	}
+	.imageView .imageHolder #vacancies_silver{
+		height: 4%;
+		left: 5.8%;
+		top: 40.6%;
+		width: 15%;
+		background:rgba(0,0,0,0);
+		cursor:pointer;
+		border:none;
+	}
+	.imageView .imageHolder #contact_silver{
+		height: 4.8%;
+		left: 81%;
+		top: 73.8%;
+		width: 13.5%;
+		background:rgba(0,0,0,0);
+		cursor:pointer;
+		border:none;
+	}
+	
+	.imageView .imageHolder #information_sponsor{		
+		height: 5.8%;
+		left: 50%;
+		top: 43%;
+		width: 16%;
+		background:rgba(0,0,0,0);
+		cursor:pointer;
+		border:none;
+	}
+	.imageView .imageHolder a #vacancies_sponsor{
+		height: 5%;
+		right: 7%;
+		top: 38%;
+		width: 14%;
+		background:rgba(0,0,0,0);
+		cursor:pointer;
+		border:none;
+	}
+	.imageView .imageHolder #contact_sponsor{
+		height: 4.8%;
+		right: 15%;
+		top: 74.8%;
+		width: 10%;
+		background:rgba(0,0,0,0);
+		cursor:pointer;
+		border:none;
+	}
+	
+	
+	
+
+
+	/* --------   Media Queries ---------- */
+	
+	@media only screen and (min-device-width : 761px) and (max-device-width : 1024px) {   /*  For moile portrait. maybe don't need */
+		body[yahoo] .deviceWidth {width:100% !important; margin:0 auto;}
+		body[yahoo] .contentWidth {width:95% !important;}
+		.pageContent{text-align:center;	}	
+	}
+	
+	@media only screen and (max-width: 760px)  {		/*  For tab */
+		body[yahoo] .deviceWidth {width:100% !important;}
+		body[yahoo] .contentWidth {width:95% !important;}		
+		.pageContent{text-align:center;	padding-bottom: 22px;}				
+		.pageContent ul li {font-size: 12px;}
+		.imageView .standContent .standContentLeft{width:100%; margin-bottom:10px; text-align:center;}		
+		.imageView .standContent .standTitleRight{width:100%; text-align:center;}
+		.pageContent .pageTitle{float:none;	}
+		.pageContent .backButton{float:none; margin-top:5px;}		
+	}
+	
+	@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {   /*  For moile portrait. maybe don't need */
+		body[yahoo] .deviceWidth {width:100% !important; margin:0 auto;}
+		body[yahoo] .contentWidth {width:95% !important;}
+		.pageContent{text-align:center;	padding-bottom:20px;}	
+		.pageContent .pageTitle{float:none;	}
+		.pageContent .pageTitle p{font-size:23px;}	
+		.pageContent .backButton{float:none; margin-top:5px;}
+	}
+	
+	@media (max-device-width : 320px) {	/*  For moile landscape. maybe don't need*/
+		body[yahoo] .deviceWidth {width:100% !important; margin:0 auto;}
+		body[yahoo] .contentWidth {width:95% !important;}
+		.pageContent{text-align:center;	}	
+		.pageContent .backButton{float:none; margin-top:5px;}	
+	}
+		

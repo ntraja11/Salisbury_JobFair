@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Animal Friends Insurance</title>
+
+<link rel="stylesheet" type="text/css" href="../../styles/headerStyle.css">
+<link rel="stylesheet" type="text/css" href="../../styles/popup.css">
+<link rel="stylesheet" type="text/css" href="../../styles/productPage.css">
+
+
+<script type="text/javascript">
+/*need to add*/
+function validation()
+{
+ 
+   var emailID = document.contactFormData.email.value;
+   atpos = emailID.indexOf("@");
+   dotpos = emailID.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+       alert("Please enter correct email ID")
+       document.contactFormData.email.focus() ;
+       return false;
+   }
+   
+  
+  var letters = /[0-9-\s()]*[1-9][0-9-()]*/; 
+  var ph = document.getElementById('phone').value;
+  if(!ph.match(letters))
+  {
+	alert("Please enter valid phone number")
+       document.contactFormData.phone.focus() ;
+       return false;  
+  }
+}
+</script>
+
+</head>
+
+<body yahoo="fix">
+
+<div class="container">
+
+	<div class="headerContent deviceWidth">
+    	
+        <div class="logoContent contentWidth">
+        	<a href="../../DOR3379884.html" >
+        	<img src="../../images/header/echo-logo.png" alt="Logo Image" class="logoImage"/>
+            </a>
+        </div>
+        
+        <div class="menuContent contentWidth">
+        	<div class="mobile-nav">MENU</div>
+        	<ul class="menus showMe">
+                <li id="menu1">
+                	<a href="../../DOR3379884.html" >RECEPTION</a>
+                </li><li id="menu2" >
+                	<a href="../../DOR3379884_exhibition.html" class="active">EXHIBITION</a>
+                </li><li id="menu3">
+                 	<a href="../../DOR3379884_contact.html" >CONTACT</a>
+                </li>            	  
+            </ul>
+        </div>
+
+    </div>
+    
+    
+    
+    <div class="bodyContent contentWidth">    	
+        
+        <div class="pageContent">
+        
+        	<div class="pageTitle">
+            	<p>Animal Friends Insurance</p>
+            </div>
+            
+            <div class="backButton">
+            	<a href="../../DOR3379884_exhibition.html" target="_self">
+            		<img src="../../images/exhibition/backArrow.png" alt="Back Arrow">
+                	<span>BACK</span>
+                </a>
+            </div>  	
+            
+        </div>
+        
+       <div class="imageView contentWidth">            
+         
+         	<div class="standContent" >
+            	<div class="standContentLeft">
+                	<p>Please use the interactive display to navigate</p>
+                </div>
+                
+                <div class="standTitleRight">            	
+	                <p class="standTitle">Silver Stand</p>
+                </div>
+            </div>
+            
+            <div class="imageHolder">               
+            
+            	<span class="redirect" id="information_silver" >&nbsp;</span>
+                <a href="http://www.animalfriends.co.uk/careers" target="_blank">
+                	<span class="redirect" id="vacancies_silver" >&nbsp;</span>
+                </a>
+                <span class="redirect" id="contact_silver"  >&nbsp;</span>
+            	<img class="mainImage" src="AnimalFriends.png" alt="AnimalFriends"/> 
+                               
+            </div>
+            
+            <div class="alphaLayer"></div>
+            
+            <div class="infoPopup">
+            		
+            		<img src="../images/infoPopupTitle.png" alt="Information popup title" class="popupTitle"/>
+                    <img src="../images/popupCloseButton.png" alt="Close Button" class="popupCloseButton"/> 
+                    <div class="infoText">
+                    	<p><span class="infoTitleText">Animal Friends Insurance</span><br /><br />Animal Friends Insurance is currently recruiting at their Head office in  Amesbury.<br /><br />Voted the Consumer Moneyfacts Pet Insurance Provider of the Year in 2014 and currently ranked in the Sunday Times Fast Track 100 fastest growing companies in Britain. We are committed to Animal Welfare and have donated over £2 million to animal charities throughout the world.<br /><br />We offer our staff a competitive salary, free on-site parking, free on-site gym,  a subsidised café and the opportunity to be part of a  growing and exciting business.<br /><br />For more information check out our website <a href="http://www.animalfriends.co.uk/careers" target="_blank" style="color:#feaa49;">www.animalfriends.co.uk/careers</a></p>
+                   </div>                                                  
+            </div> 
+            
+            
+            <div class="contactForm">
+            		
+            		<!--img src="images/infoPopupTitle.png" alt="Contact Form popup title" class="contactFormTitle"/-->
+                    <img src="../images/popupCloseButton.png" alt="Close Button" class="contactFormCloseButton"/> 
+                    <iframe id="mapFrame" width="100%" height="320" frameborder="0" style="border:0"></iframe> 
+                    
+                    <div class="addressContent">
+                        <div class="addressLeft"><p><b>Animal Friends House,</b><br/>No.1 The Crescent, Sun Rise Way,<br/>Amesbury, Wiltshire,<br/>SP4 7QA.</p></div>
+                    	<div class="addressRight"><p><b>EMAIL</b><span style="font-size:12px;"> - <a href="mailto:chloe.pepper@animalfriends.co.uk">chloe.pepper@animalfriends.co.uk</a></span></p><p><b>PHONE</b> - <a href="tel:08445570 300" >0844 55 70 300</a></p><p><b>WEB</b> - <a href="http://www.animalfriends.co.uk/" target="_blank">www.animalfriends.co.uk/</a></p></div>
+                    </div>
+                    
+                    <div class="formContent">
+                    	<div class="inputs">  
+                                  	
+                           <form name="contactFormData" action="../php/sendFormData.php" method="post" onSubmit="return validation()">
+                            <div class="personal"> 
+                            	                           	
+                                <input type="hidden" id="dummy">
+                                <input type="hidden" id="to" name="to" value="chloe.pepper@animalfriends.co.uk">
+                                <label class="nameLabel">Name*</label>
+                                <input type="text" class="inputVal" id="name" name="name" value="" onFocus="clearFieldFirstTime(this);" required>
+                                <label class="nameLabel">Email*</label>
+                                <input type="text"class="inputVal" id="email" name="email" value="" onFocus="clearFieldFirstTime(this);" required>                              
+                                <label class="nameLabel">Phone</label>
+                                <input type="text" class="inputVal" id="phone" name="phone" value=""  onFocus="clearFieldFirstTime(this);" required>
+                            </div>
+                            <div class="additional">
+                            	<label class="nameLabel">Message</label>
+                                <textarea rows="11" cols="50" name="additionalComments" class="inputVal" id="additionalComments" onFocus="clearFieldFirstTime(this);" required></textarea>
+                            </div>
+                             <div class="enquireNow">                               
+                               <input type="submit" id="sbmt" name="submit" />                                
+                             </div> 
+                             </form>
+                             
+                         
+                    	</div>
+                    </div>                                                  
+            </div>            
+			
+            
+        </div>
+        
+        
+        <div class="webAddress">        	
+        	<p>
+            	<a href="http://www.salisburyjournal.co.uk/" target="_blank">www.salisburyjournal.co.uk</a>
+            </p>            
+        </div>
+        
+    </div>
+    
+    
+    <div class="footerContent deviceWidth">
+    	<!--p>© 2014 Newsquest Media Group & Travel Technology Systems</p-->
+    </div>
+    
+    
+    
+</div>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+	$(document).ready(function() {
+		$(".mobile-nav").click(function(){
+			$(".menus").slideToggle();
+		});
+		
+		$(".popupCloseButton").click(function(){
+			$(".infoPopup").hide(0);
+			$(".imageHolder").show(0);	
+			$(".alphaLayer").css("display", "none");
+		});
+		
+		$("#information_silver").click(function(){
+			$(".infoPopup").show(0);
+			$(".imageHolder").hide(0);
+			$(".alphaLayer").css("display", "block");	
+		});
+		
+		$("#contact_silver").click(function(){
+			$(".contactForm").show(0);
+			$(".imageHolder").hide(0);
+			$(".alphaLayer").css("display", "block");
+			$("#mapFrame").attr("src","https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2501.4264788895257!2d-1.7599580000000004!3d51.174361999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873e58f9f5b5925%3A0x413e580f783147e6!2sAnimal+Friends+Insurance!5e0!3m2!1sen!2sin!4v1431327662486");
+				
+		});
+		
+		$(".contactFormCloseButton").click(function(){
+			$(".contactForm").hide(0);
+			$(".imageHolder").show(0);	
+			$(".alphaLayer").css("display", "none");
+		});
+		
+		
+		
+		
+
+			var valuse = ["Name", "Post Code", "Phone", "Email", "Additional Comments"];
+			function setInputValus(){
+				for (i = 0; i < valuse.length; i++) { 
+					//document.getElementsByClassName("inputVal")[i].value = valuse[i];
+				}
+			}
+			//setInputValus();
+			
+			function clearFieldFirstTime(element) {
+			  if (element.counter==undefined) {
+				element.counter = 1;
+			  }
+			
+			  else {
+				element.counter++;
+			  }
+			
+			  if (element.counter == 1) {
+				element.value = '';
+			  }
+			}		
+		
+	});
+	
+		
+		
+        
+		
+</script>
+
+</body>
+</html>
+

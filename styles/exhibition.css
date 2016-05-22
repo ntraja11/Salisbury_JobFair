@@ -1,0 +1,38 @@
+/*
+ *  (C) 2013 Travel Technology Systems Ltd.
+ *
+ *  No part of this software may be reproduced, stored in a retrieval system, translated, transcribed,
+ *  or transmitted, in any form, or by means manual, electric, electronic, electro-magnetic, mechanical,
+ *  optical, or otherwise, without prior written permission.
+ *
+ */
+ 
+#wrapper {
+	height: 1000px;
+}
+
+#information p {
+ 	color: #ff0000;
+	font-size: 16px; 
+	padding-left: 20px;	
+}
+
+#carousel {
+	width: 100%;
+	margin:0 auto;
+}
+
+#thumbnails {
+	width: 100%;
+	float: left;
+	border-top: 3px solid black;
+	margin-top: 40px;
+	padding-top: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#thumbnails a img {
+	width: 94px;
+}

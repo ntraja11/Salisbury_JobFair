@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+*,
+*:after,
+*:before {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+a{
+	text-decoration:none;
+}
+body{
+	width:100%;
+	height:100%;
+	margin:0 auto;		
+}
+
+.headerContent, .logoContent, .menuContent{
+	margin:0px auto;
+}
+
+.container{
+	background-color:#fff;
+	width:100%;
+	height:100%;
+}
+
+.headerContent{
+	background-color:#23292d;
+	width:100%;
+}
+
+.logoContent{
+	width:940px;
+	height:150px;	
+}
+
+.logoContent .logoImage{
+	margin:45px 0px 20px 0px;
+	width:652px;		
+	height:auto;
+	float:left;
+	border:none;
+}
+
+
+.menuContent{	
+	/*background-color:#ee4123;*/
+	clear:both;
+	width:940px;	
+}
+
+.menuContent ul{
+	position:relative;
+	margin:0px 0px 0px 0px;	
+	padding:0px 0px 0px 0px;
+	height:100%;	
+	list-style-type:none;
+	text-align:center;
+}
+
+.menuContent ul li{
+	display:inline-block;
+	list-style:none;
+	background-color:#007cc5;
+	padding-top:15px
+	width:33.33%;
+	width: calc(100% / 3);
+	box-sizing: border-box;
+	text-align:center;
+	padding-top:10px;
+}
+
+.menuContent ul #menu1{
+	
+}
+.menuContent ul #menu2, #menu3, #menu4{
+	/*margin-left:1px;	*/
+	border-left:4px solid #007cc5;
+}
+
+.menuContent ul li a{
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizelegibility;
+}
+.menuContent ul li a {
+    background-color: #394148;
+    color: #ffffff;
+    display: block;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 20px;
+    padding: 24px 0;
+    text-decoration: none;
+}
+
+.menuContent ul li a:hover{
+	background-color:#007cc5;
+}
+
+.menuContent ul li a.active{
+	background-color:#007cc5;
+	cursor:text;
+}
+
+.menuContent ul li.selected a{
+	background-color:#007cc5;
+}
+.menuContent .mobile-nav{
+	display:none;
+	cursor:pointer;
+	top:0;
+	right:0;
+	width:100%;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:15px;
+	color:#ffffff;
+	background-color:#5d6165;
+	margin:0px 0px 0px 0px;
+	padding:14px 62.8px;
+	text-align:center;
+}
+
+.bodyContent .webAddress{
+	clear:both;
+	width:100%;
+	display:inline-block;	
+	margin-top:0px;	
+	/*border-top:1px solid #ed4122;		*/
+}		
+.webAddress p{	
+	font-family:Verdana, Geneva, sans-serif;	
+	font-size:30px;	
+	text-align:center;
+	margin:20px 0 20px 0;
+}	
+.webAddress p a{		
+	text-decoration:none;
+	color:#606c76;
+	font-family:Verdana, Geneva, sans-serif;	
+	font-size:30px;	
+	text-align:center;
+	padding:10px 5px 10px 5px;
+			
+}
+
+.footerContent{		
+	background-color:#007cc5;
+	height:120px;
+	width:100%;
+	border-top:15px solid #30373d;
+	text-align:center;
+	color:#fff;		
+}	
+.footerContent p{		
+	
+}	
+
+@media only screen and (min-device-width : 761px) and (max-device-width : 1024px) {   /*  For moile portrait. maybe don't need */
+
+	.headerContent{height:auto;}
+	.headerContent .logoContent{}
+	.headerContent .logoContent .logoImage{}
+	.headerContent .menuContent{width: 100%;}
+	.headerContent .menuContent ul{font-size:0;}
+	.headerContent .menuContent ul li{font-size:0;}
+	
+	.headerContent .menuContent ul li a{padding: 21px 30%;}
+	.headerContent .menuContent ul #menu2, #menu3, #menu4{}
+	
+	.bodyContent .webAddress{margin-bottom:20px;}
+	.footerContent p{font-size:17px; width: 80%; margin: 30px auto;}
+}
+
+@media only screen and (max-width: 760px)  {		/*  For tab */
+
+	.headerContent{height:auto;}
+	.headerContent .logoContent{height:auto; text-align:center;}
+	.headerContent .logoContent .logoImage{width:70%; margin: 24px 0 0;}
+	.headerContent .logoContent .sponsorImage{width:65%; margin: 15px 0 10px;}
+	.headerContent .menuContent{height:auto;}
+	.headerContent .menuContent ul li{float:none; text-align:center;  padding-top:8px}
+	.menuContent ul li a { font-size: 15px; background-color: #5D6165; padding: 14px 12px; height:auto; }
+	.headerContent .menuContent ul #menu2, #menu3, #menu4{margin-left:0px;}
+	.bodyContent .webAddress p, .bodyContent .webAddress p a{font-size:26px;}
+	.menuContent .menus.showMe{display:block;}
+	.logoContent .logoImage, .logoContent .sponsorImage{float:none;};
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {/*  For moile portrait. maybe don't need */
+
+	.headerContent{height:auto;}
+	.headerContent .logoContent{height:auto; text-align:center;}
+	.headerContent .logoContent .logoImage{width:80%; margin: 24px 0 0;}
+	.headerContent .logoContent .sponsorImage{width:75%; margin: 15px 0 10px;}
+	.headerContent .menuContent{height:auto;}
+	.headerContent .menuContent ul li{float:none; text-align:center; width:100%; padding-top:0px;}
+	.headerContent .menuContent ul li a{margin:0 0 1px 0; font-size:15px; border:none;}
+	.headerContent .menuContent ul #menu2, #menu3, #menu4{margin-left:0px; border:none;}
+	.headerContent .menuContent ul #menu1{padding-top:1px;}
+	.menuContent .mobile-nav{display:block;}
+	.menuContent .menus.showMe{display:none;}
+	
+	.bodyContent .webAddress{margin-bottom:20px;}
+	.bodyContent .webAddress p, .bodyContent .webAddress p a{font-size:18px; }
+	.footerContent p{font-size:17px; width: 80%; margin: 30px auto;}
+	.webAddress p a{padding:10px 0px;}
+}
+
+@media (max-device-width : 320px) {	/*  For moile landscape. maybe don't need*/
+
+	.headerContent{height:auto;}
+	.headerContent .logoContent{height:auto; text-align:center;}
+	.headerContent .logoContent .logoImage{width:88%; margin: 24px 0 0;}
+	.headerContent .logoContent .sponsorImage{width:88%; margin: 15px 0 10px;}
+	.headerContent .menuContent{height:auto;}
+	.headerContent .menuContent ul li{float:none; text-align:center; width:100%; padding-top:0px;}
+	.headerContent .menuContent ul li a{margin:0 0 1px 0; font-size:15px; border:none;}
+	.headerContent .menuContent ul #menu2, #menu3, #menu4{margin-left:0px; border:none;}
+	.headerContent .menuContent ul #menu1{padding-top:1px;}
+	.menuContent .mobile-nav{display:block;}
+	.menuContent .menus.showMe{display:none;}
+	
+	.bodyContent .webAddress{margin-bottom:20px;}
+	.bodyContent .webAddress p, .bodyContent .webAddress p a{font-size:18px;}
+	.footerContent p{font-size:12px; width: 80%; margin: 30px auto;}
+	.webAddress p a{padding:10px 0px;}
+}
+
+
+
+
+

@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+*,
+*:after,
+*:before {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+body{
+	width:100%;
+	height:100%;
+	margin:0 auto;		
+}
+
+
+.imageView .infoPopup{
+	position:relative;
+	width:100%;
+	height:auto;
+	background-color:#015db4;
+	padding:30px 20px 40px 20px;
+	border:20px solid #ffffff;
+	box-shadow: 0px 0px 10px 0px #888888;
+	display:none;					
+}
+
+.imageView .infoVacenies{
+	position:relative;
+	width:100%;
+	height:auto;
+	background-color:#015db4;
+	padding:30px 20px 40px 20px;
+	border:20px solid #ffffff;
+	box-shadow: 0px 0px 10px 0px #888888;
+	display:none;					
+}
+
+.imageView .infoVacenies img.popupCloseButton{
+	position:absolute;
+	right:-20px;
+	top:-20px;
+	width:5%;
+	cursor:pointer;
+}
+
+.imageView .infoVacenies img.popupTitle{		
+	width:33%;
+}
+
+.imageView .contactForm{
+	position:relative;
+	width:100%;
+	height:auto;
+	background-color:#015db4;
+	padding:30px 20px 40px 20px;
+	border:20px solid #ffffff;
+	box-shadow: 0px 0px 10px 0px #888888;
+	margin-top:20px;
+	display:none;	
+	color:#ffffff;			
+}
+
+.imageView .contactForm img.contactFormCloseButton{
+	position:absolute;
+	right:-20px;
+	top:-20px;
+	width:5%;
+	cursor:pointer;
+}
+
+.imageView .contactForm .addressContent{
+	width:100%;
+	margin:0 auto;			
+}
+.imageView .contactForm .addressContent .addressLeft{
+	display:inline-block;
+	vertical-align: top;
+	width:40%;	
+}
+
+.imageView .contactForm .addressContent .addressRight{
+	display:inline-block;
+	vertical-align: top;
+	width:57%;	
+	margin-left: 2%;
+	word-wrap:break-word;
+}
+.imageView .contactForm .addressContent .addressRight a{
+	color:#FFF;
+}
+
+.alphaLayer{
+	/*z-index: 9999999;*/
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.7);
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	top: 0px;
+	left:0;
+	display:none;
+}
+
+.imageView .infoPopup img.popupTitle{		
+	width:33%;
+	min-width: 120px;
+}
+
+.imageView .infoPopup img.popupCloseButton{
+	position:absolute;
+	right:-20px;
+	top:-20px;
+	width:5%;
+	cursor:pointer;
+}
+
+.infoPopup .infoText{
+	margin-top:15px;
+	color:#fff;		
+	font-size:14px;
+	line-height:22px;
+	overflow:auto;
+	max-height:530px;
+	padding-right:20px;
+	
+}
+
+
+.infoPopup .infoText ul, .infoVacenies .infoText ul{
+	padding-left:15px;
+	list-style:inside;
+}
+.infoPopup .infoText .infoTitleText, .infoVacenies .infoText .infoTitleText{
+	font-size:20px;
+}
+p, span, .infoPopup .infoText ul li, .infoVacenies .infoText ul li{
+	font-family:Verdana, Geneva, sans-serif;
+}
+.infoVacenies .infoText{
+	margin-top:15px;
+	color:#fff;		
+	font-size:14px;
+	line-height:22px;
+	overflow:auto;
+	padding-right:20px;
+	height:530px;
+}
+
+
+.imageView .imageHolder, .imageView .infoPopup{
+	margin-top:30px;
+	position:relative;	
+}
+
+.formContent{
+	margin-top:50px;
+}
+.formContent .inputs{
+	font-family:Verdana, Geneva, sans-serif;			
+	display:inline-block;
+	margin-top:20px;	
+}
+.inputs .personal{
+	width:41%;
+	float:left;
+}
+.inputs .additional{
+	float:left;
+	width:58.5%;	
+}
+.inputs .personal input{
+	margin:5px;	
+	padding:10px 5px;
+	border-radius:5px;
+	width:90%;
+	color:#222;
+}
+.inputs label{
+	margin:5px;	
+	padding:10px 5px;		
+	width:90%;
+	color:#fff;
+}
+.inputs .additional textarea{
+	margin:4px 5px;	
+	padding:0px 5px;
+	border-radius:5px;
+	width:98%;	
+	height: 187px;
+	color:#222;
+}
+.inputs .enquireNow{
+	float:right;
+	margin-top:20px;
+	padding-right:0px;	
+}
+.inputs .enquireNow img{
+	
+}
+.inputs .enquireNow #sbmt{
+	width:216px;
+	height:74px;
+	background:url(http://creative.2adpro.com/chennaiworks/digital/Newsquest/Echo/DOR12345/brands/images/submitContactForm.png) rgba(0,0,0,0) no-repeat;
+	background-size:100% auto;
+	border:none;
+	text-indent:-999px;
+	cursor: pointer;
+}
+.imageView .submitButton{
+	width:100%;
+	text-align:right;
+}
+.imageView .submitButton img{
+	
+}
+#mapFrame{margin-bottom:20px;}
+
+/*input submit bg for form 
+#sbmt {
+  background: url(../images/submitContactForm.png) no-repeat;
+  background-size:100% auto;
+  border: 0px;
+  width: 216px;
+  height: 74px;
+  color: transparent;
+  cursor: pointer;
+}
+*/
+
+@media only screen and (max-width: 760px)  {		/*  For tab */		
+	.infoPopup .infoText{font-size:12px;}
+	.infoPopup .infoText .infoTitleText{font-size:18px;}
+	.inputs .personal, .inputs .additional{width:100%; float:none;}
+	.inputs .personal input { width: 98%; }
+	.inputs .additional textarea { width: 98%; }
+	.imageView .contactForm .addressContent .addressLeft {display: block; width: 100%; }
+	.imageView .contactForm .addressContent .addressRight { display: block; width: 100%; margin-top:15px;  margin-left: 0%;}
+	.imageView .infoPopup{height:710px;}
+	.imageView .infoVacenies {height:auto;}
+	//.infoPopup .infoText{height:530px;}
+	.imageView .infoPopup img.popupCloseButton{width:6%;}
+	.imageView .contactForm img.contactFormCloseButton{width:6%;}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {   /*  For moile portrait. maybe don't need */		
+	.infoPopup .infoText{font-size:12px;}
+	.infoPopup .infoText .infoTitleText{font-size:18px;}
+	.inputs .personal, .inputs .additional{width:100%; float:none;}
+	.inputs .personal input { width: 98%; }
+	.inputs .additional textarea { width: 98%; }
+	.inputs .enquireNow #sbmt{ width:150px; height:50px;}	
+	.imageView .infoPopup{height:660px;}
+	.imageView .infoVacenies {height:auto;}
+	//.infoPopup .infoText{height:510px;}
+	.imageView .infoPopup img.popupCloseButton{width:8%;}
+	.imageView .contactForm img.contactFormCloseButton{width:8%;}
+}
+
+@media (max-device-width : 320px) {	/*  For moile landscape. maybe don't need*/		
+	.infoPopup .infoText{font-size:12px;}
+	.infoPopup .infoText .infoTitleText{font-size:18px;}
+	.inputs .personal input { width: 98%; }
+	.inputs .additional textarea { width: 98%; }
+	.inputs .enquireNow #sbmt{ width:150px; height:50px;}
+	.imageView .infoPopup{height:660px;}
+	.imageView .infoVacenies {height:auto;}
+	//.infoPopup .infoText{height:510px;}	
+	.imageView .infoPopup img.popupCloseButton{width:11%;}		
+	.imageView .contactForm img.contactFormCloseButton{width:11%;}	
+}

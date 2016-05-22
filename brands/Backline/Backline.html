@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Backline Logistic Support Services</title>
+
+<link rel="stylesheet" type="text/css" href="../../styles/headerStyle.css">
+<link rel="stylesheet" type="text/css" href="../../styles/popup.css">
+<link rel="stylesheet" type="text/css" href="../../styles/productPage.css">
+
+
+<script type="text/javascript">
+/*need to add*/
+function validation()
+{
+ 
+   var emailID = document.contactFormData.email.value;
+   atpos = emailID.indexOf("@");
+   dotpos = emailID.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+       alert("Please enter correct email ID")
+       document.contactFormData.email.focus() ;
+       return false;
+   }
+   
+  
+  var letters = /[0-9-\s()]*[1-9][0-9-()]*/; 
+  var ph = document.getElementById('phone').value;
+  if(!ph.match(letters))
+  {
+	alert("Please enter valid phone number")
+       document.contactFormData.phone.focus() ;
+       return false;  
+  }
+}
+</script>
+
+</head>
+
+<body yahoo="fix">
+
+<div class="container">
+
+	<div class="headerContent deviceWidth">
+    	
+        <div class="logoContent contentWidth">
+        	<a href="../../DOR3379884.html" >
+        	<img src="../../images/header/echo-logo.png" alt="Logo Image" class="logoImage"/>
+            </a>
+        </div>
+        
+        <div class="menuContent contentWidth">
+        	<div class="mobile-nav">MENU</div>
+        	<ul class="menus showMe">
+                <li id="menu1">
+                	<a href="../../DOR3379884.html" >RECEPTION</a>
+                </li><li id="menu2" >
+                	<a href="../../DOR3379884_exhibition.html" class="active">EXHIBITION</a>
+                </li><li id="menu3">
+                 	<a href="../../DOR3379884_contact.html" >CONTACT</a>
+                </li>            	  
+            </ul>
+        </div>
+
+    </div>
+    
+    
+    
+    <div class="bodyContent contentWidth">    	
+        
+        <div class="pageContent">
+        
+        	<div class="pageTitle">
+            	<p>Backline Logistic Support Services</p>
+            </div>
+            
+            <div class="backButton">
+            	<a href="../../DOR3379884_exhibition.html" target="_self">
+            		<img src="../../images/exhibition/backArrow.png" alt="Back Arrow">
+                	<span>BACK</span>
+                </a>
+            </div>  	
+            
+        </div>
+        
+       <div class="imageView contentWidth">            
+         
+         	<div class="standContent" >
+            	<div class="standContentLeft">
+                	<p>Please use the interactive display to navigate</p>
+                </div>
+                
+                <div class="standTitleRight">            	
+	                <p class="standTitle">Silver Stand</p>
+                </div>
+            </div>
+            
+            <div class="imageHolder">               
+            
+            	<span class="redirect" id="information_silver" >&nbsp;</span>
+                <a href="http://www.backlinelogistics.co.uk/vacancies/" target="_blank">
+                	<span class="redirect" id="vacancies_silver" >&nbsp;</span>
+                </a>
+                <span class="redirect" id="contact_silver"  >&nbsp;</span>
+            	<img class="mainImage" src="Backline.png" alt="Backline"/> 
+                               
+            </div>
+            
+            <div class="alphaLayer"></div>
+            
+            <div class="infoPopup">
+            		
+            		<img src="../images/infoPopupTitle.png" alt="Information popup title" class="popupTitle"/>
+                    <img src="../images/popupCloseButton.png" alt="Close Button" class="popupCloseButton"/> 
+                    <div class="infoText">
+                    	<p><span class="infoTitleText">Backline Logistic Support Services</span><br /><br />Backline Logistic Support Services is the West Country’s premier service provider of driving and industrial staff.<br /><br />From roots as a temporary staffing provider Backline has developed into a one-stop shop offering applicants temporary and permanent recruitment solutions, a wide range of training courses via its accredited training centre.<br /><br />We offer candidates access to 1000s of positions via our job match scheme, free training courses, return to work programmes as well as a bespoke CV writing service. In addition, we operate a licence upgrade curriculum and offer permanent positions of employment on full time contacts working directly for Backline.<br /><br />If this is something you would like to discuss please come along and discuss with our team – we look forward to meeting you!</p>
+                   </div>                                                  
+            </div> 
+            
+            
+            <div class="contactForm">
+            		
+            		<!--img src="images/infoPopupTitle.png" alt="Contact Form popup title" class="contactFormTitle"/-->
+                    <img src="../images/popupCloseButton.png" alt="Close Button" class="contactFormCloseButton"/> 
+                    <iframe id="mapFrame" width="100%" height="320" frameborder="0" style="border:0"></iframe> 
+                    
+                    <div class="addressContent">
+                        <div class="addressLeft"><p><b>Backline Logistic Support Services,</b><br/>1 Enterprise House,<br/>Cherry Orchard Lane,<br/>Churchfields Ind. Est.,<br/>Salisbury,<br/>SP2 7LD.</p></div>
+                    	<div class="addressRight"><p><b>EMAIL</b><span style="font-size:12px;"> - <a href="mailto:Katehiggins@backlinelogistics.co.uk">Katehiggins@backlinelogistics.co.uk</a></span></p><p><b>PHONE</b> - <a href="tel:01935478866" >01935 478866</a></p><p><b>WEB</b> - <a href="http://www.backlinelogistics.co.uk" target="_blank">www.backlinelogistics.co.uk</a></p></div>
+                    </div>
+                    
+                    <div class="formContent">
+                    	<div class="inputs">  
+                                  	
+                           <form name="contactFormData" action="../php/sendFormData.php" method="post" onSubmit="return validation()">
+                            <div class="personal"> 
+                            	                           	
+                                <input type="hidden" id="dummy">
+                                <input type="hidden" id="to" name="to" value="Katehiggins@backlinelogistics.co.uk">
+                                <label class="nameLabel">Name*</label>
+                                <input type="text" class="inputVal" id="name" name="name" value="" onFocus="clearFieldFirstTime(this);" required>
+                                <label class="nameLabel">Email*</label>
+                                <input type="text"class="inputVal" id="email" name="email" value="" onFocus="clearFieldFirstTime(this);" required>                              
+                                <label class="nameLabel">Phone</label>
+                                <input type="text" class="inputVal" id="phone" name="phone" value=""  onFocus="clearFieldFirstTime(this);" required>
+                            </div>
+                            <div class="additional">
+                            	<label class="nameLabel">Message</label>
+                                <textarea rows="11" cols="50" name="additionalComments" class="inputVal" id="additionalComments" onFocus="clearFieldFirstTime(this);" required></textarea>
+                            </div>
+                             <div class="enquireNow">                               
+                               <input type="submit" id="sbmt" name="submit" />                                
+                             </div> 
+                             </form>
+                             
+                         
+                    	</div>
+                    </div>                                                  
+            </div>            
+			
+            
+        </div>
+        
+        
+        <div class="webAddress">        	
+        	<p>
+            	<a href="http://www.salisburyjournal.co.uk/" target="_blank">www.salisburyjournal.co.uk</a>
+            </p>            
+        </div>
+        
+    </div>
+    
+    
+    <div class="footerContent deviceWidth">
+    	<!--p>© 2014 Newsquest Media Group & Travel Technology Systems</p-->
+    </div>
+    
+    
+    
+</div>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+	$(document).ready(function() {
+		$(".mobile-nav").click(function(){
+			$(".menus").slideToggle();
+		});
+		
+		$(".popupCloseButton").click(function(){
+			$(".infoPopup").hide(0);
+			$(".imageHolder").show(0);	
+			$(".alphaLayer").css("display", "none");
+		});
+		
+		$("#information_silver").click(function(){
+			$(".infoPopup").show(0);
+			$(".imageHolder").hide(0);
+			$(".alphaLayer").css("display", "block");	
+		});
+		
+		$("#contact_silver").click(function(){
+			$(".contactForm").show(0);
+			$(".imageHolder").hide(0);
+			$(".alphaLayer").css("display", "block");
+			
+			$("#mapFrame").attr("src","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.0118991221325!2d-1.8184724!3d51.0713304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873ebdb4d59bee9%3A0xabc28c60715be90b!2sEnterprise+House%2C+Churchfields+Industrial+Estate%2C+Cherry+Orchard+Ln%2C+Salisbury%2C+Wiltshire+SP2+7LD%2C+UK!5e0!3m2!1sen!2sin!4v1431311384294");
+				
+		});
+		
+		$(".contactFormCloseButton").click(function(){
+			$(".contactForm").hide(0);
+			$(".imageHolder").show(0);	
+			$(".alphaLayer").css("display", "none");
+		});
+		
+		
+		
+		
+
+			var valuse = ["Name", "Post Code", "Phone", "Email", "Additional Comments"];
+			function setInputValus(){
+				for (i = 0; i < valuse.length; i++) { 
+					//document.getElementsByClassName("inputVal")[i].value = valuse[i];
+				}
+			}
+			//setInputValus();
+			
+			function clearFieldFirstTime(element) {
+			  if (element.counter==undefined) {
+				element.counter = 1;
+			  }
+			
+			  else {
+				element.counter++;
+			  }
+			
+			  if (element.counter == 1) {
+				element.value = '';
+			  }
+			}		
+		
+	});
+	
+		
+		
+        
+		
+</script>
+
+</body>
+</html>
+
